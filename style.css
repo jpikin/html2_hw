@@ -16,7 +16,7 @@
   padding-top: 18px;
   padding-bottom: 18px;
   align-items: flex-end;
-  gap: 41px;
+  gap: 40px;
 }
 .header__left_container__logo_img:hover {
   transform: rotateZ(-45deg);
@@ -27,7 +27,7 @@
 .header__right_container {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 34px;
 }
 .header__right_container__menu_img:hover {
   transform: scale(1.2);

@@ -21,7 +21,7 @@
         padding-top: 18px;
         padding-bottom: 18px;
         align-items: flex-end;
-        gap: 41px;
+        gap: 40px;
         &__logo_img:hover {
             transform: rotateZ(-45deg);
         }
@@ -32,7 +32,7 @@
     &__right_container{
         display: flex;
         align-items: center;
-        gap: 25px;
+        gap: 34px;
         &__menu_img:hover {
         transform: scale(1.2);
         .menu_img_2{
