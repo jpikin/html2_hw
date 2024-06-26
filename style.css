@@ -34,4 +34,11 @@
 }
 .header__right_container__menu_img:hover .menu_img_2 {
   fill: #F16D7F;
+}
+
+.top {
+  display: flex;
+}
+.top__right_container {
+  background: #F1E4E6;
 }/*# sourceMappingURL=style.css.map */

@@ -41,4 +41,11 @@
         }
     }
 }
+.top {
+    display: flex;
+
+    &__right_container{
+        background: #F1E4E6;
+    }
+}
 
