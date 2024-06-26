@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.features__card__name, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text {
+.features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text {
   font-family: Lato;
   font-style: normal;
   line-height: normal;
@@ -147,9 +147,76 @@
 .features__card {
   display: flex;
   flex-direction: column;
+  background: #F8F8F8;
+}
+.features__card__card_images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features__card__card_images:hover .features__card__card_images__img {
+  filter: brightness(50%);
+}
+.features__card__card_images:hover .features__card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features__card__button {
+  display: none;
+  position: absolute;
+  width: 139px;
+  height: 44px;
+  border: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.features__card__add_to_cart {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 11px;
 }
 .features__card__name {
   color: #000;
   font-size: 13px;
   font-weight: 400;
+  padding-top: 35px;
+  margin-left: 18px;
+}
+.features__card__price {
+  color: #F16D7F;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 18px;
+  margin-bottom: 20px;
+  margin-left: 18px;
+}
+.features__card__description {
+  color: #5D5D5D;
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 13px;
+  margin-left: 18px;
+}
+
+.features_button {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 95px;
+}
+.features_button__button {
+  width: 212px;
+  height: 48px;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  background: #FFF;
+}
+.features_button__button:hover {
+  color: #FFF;
+  border: 1px solid #FFF;
+  background: #F16D7F;
 }/*# sourceMappingURL=style.css.map */

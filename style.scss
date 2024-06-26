@@ -154,19 +154,80 @@
     &__card{
         display: flex;
         flex-direction: column;
+        background: #F8F8F8;
         &__card_images{
-            &__img{}
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        &__button{}
-        &__add_to_cart{}
+        &__card_images:hover{
+            .features__card__card_images__img{
+                filter: brightness(50%);
+            }
+            .features__card__button{
+                @include center_position();
+            }
+        }
+        &__button{
+            display: none;
+            position: absolute;
+            width: 139px;
+            height: 44px;
+            border: 1px solid #ffffff; 
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+        &__add_to_cart{
+            color: #FFF;
+            @extend %font-lato;
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 11px;
+        }
         &__name{
             color: #000;
             @extend %font-lato;
             font-size: 13px;
             font-weight: 400;
+            padding-top: 35px;
+            margin-left: 18px;
         }
-        &__price{}
-        &__description{}
+        &__price{
+            color: $colorBrand;
+            @extend %font-lato;
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 18px;
+            margin-bottom: 20px;
+            margin-left: 18px;
+        }
+        &__description{
+            color: #5D5D5D;
+            @extend %font-lato;
+            font-size: 14px;
+            font-weight: 300;
+            padding-top: 13px;
+            margin-left: 18px;
+        }
+    }
+}
+.features_button{
+    @include center_570();
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 95px;
+    &__button{
+        width: 212px;
+        height: 48px;
+        color: $colorBrand;
+        border: 1px solid $colorBrand;
+        background: #FFF;
+    }
+    &__button:hover{
+        color: #FFF;
+        border: 1px solid #FFF;
+        background: $colorBrand;
     }
 }
         
