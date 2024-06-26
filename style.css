@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.top__fashion_text, .top__lux_text, .top__brand_text {
+.offer__card__text, .top__fashion_text, .top__lux_text, .top__brand_text {
   font-family: Lato;
   font-style: normal;
   line-height: normal;
@@ -67,4 +67,46 @@
   color: #222;
   font-size: 32px;
   font-weight: 700;
+}
+
+.offer > div:nth-child(4) {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.offer {
+  width: 1140px;
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+  margin-top: 65px;
+  margin-bottom: 96px;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: 260px 180px;
+  gap: 30px;
+}
+.offer__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offer__card__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400px;
+}
+.offer__card__bottom_text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #F16D7F;
+}
+.offer__card__img {
+  filter: brightness(50%);
 }/*# sourceMappingURL=style.css.map */
