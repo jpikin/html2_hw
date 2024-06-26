@@ -1,0 +1,44 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin center(){
+    padding-left:calc(50% - 570px);
+    padding-right:calc(50% - 570px);
+}
+
+.header{
+    @include center();
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    align-items: center;
+    &__left_container{
+        display: flex;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        align-items: flex-end;
+        gap: 41px;
+        &__logo_img:hover {
+            transform: rotateZ(-45deg);
+        }
+        &__find_img:hover{
+            transform: scale(1.2);
+        }
+    }
+    &__right_container{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        &__menu_img:hover {
+        transform: scale(1.2);
+        .menu_img_2{
+            fill: $colorBrand;
+            }
+        }
+    }
+}
+
