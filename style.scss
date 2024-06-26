@@ -64,23 +64,30 @@
     &__img {
     height: 764px;
     }
-    &__brand_text{
-    color: $colorBrand;
-    @extend %font-lato;
-    font-size: 48px;
-    font-weight: 900;
-    }
-    &__lux_text{
-    color: $colorText;
-    @extend %font-lato;
-    font-size: 32px;
-    font-weight: 700;
-    }
-    &__fashion_text{
-    color: $colorText;
-    @extend %font-lato;
-    font-size: 32px;
-    font-weight: 700;
+    &__text_group{
+        display: flex;
+        gap: 16px;
+        padding-right: 0;
+        &__brand_text{
+            color: $colorText;
+            @extend %font-lato;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 58px;
+        }
+        &__lux_text{
+            color: $colorText;
+            @extend %font-lato;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+        }
+        &__fashion_text{
+            color: $colorBrand;
+            @extend %font-lato;
+            font-size: 32px;
+            font-weight: 700;
+        }
     }
 }
 .offer > div:nth-child(4) {
@@ -124,6 +131,7 @@
     flex-direction: column;
     align-items: center;
     gap: 6px;
+    margin-bottom: 48px;
     &__items{
         color: $colorText;
         @extend %font-lato;
@@ -135,6 +143,30 @@
         @extend %font-lato;
         font-size: 14px;
         font-weight: 400;
+    }
+}
+.features{
+    @include center_570();
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    gap: $gapItems;;
+    
+    &__card{
+        display: flex;
+        flex-direction: column;
+        &__card_images{
+            &__img{}
+        }
+        &__button{}
+        &__add_to_cart{}
+        &__name{
+            color: #000;
+            @extend %font-lato;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        &__price{}
+        &__description{}
     }
 }
         
