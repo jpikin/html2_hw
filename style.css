@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+.top__fashion_text, .top__lux_text, .top__brand_text {
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+}
+
 .header {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -38,7 +44,27 @@
 
 .top {
   display: flex;
-}
-.top__right_container {
+  align-items: center;
+  gap: 63px;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
   background: #F1E4E6;
+}
+.top__img {
+  height: 764px;
+}
+.top__brand_text {
+  color: #F16D7F;
+  font-size: 48px;
+  font-weight: 900;
+}
+.top__lux_text {
+  color: #222;
+  font-size: 32px;
+  font-weight: 700;
+}
+.top__fashion_text {
+  color: #222;
+  font-size: 32px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
