@@ -286,9 +286,133 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px;
+            gap: $gapItems;
             padding-left: 0px;
             padding-top: 97px;
+            &__text{
+                width: 360px;
+                height: 99px;
+                color: $colorText;
+                text-align:center;
+                @extend %font-lato;
+                font-size: 20px;
+                font-weight: 400;
+                padding-bottom: 126px;
+            }
+            &__intersect_text_curve{
+                color: $colorText;
+                @extend %font-lato;
+                font-style: italic;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+        &__subscribe_form{
+            display: flex;
+            padding-top: 150px;
+            padding-right: 0px;
+            flex-direction: column;
+            align-items: center;
+            &__first{
+                color: $colorText;
+                @extend %font-lato;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 167%;
+            }
+            &__second{
+                color: $colorText;
+                @extend %font-lato;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 167%;
+            }
+            &__text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__first{
+                    color: $colorText;
+                    text-align: center;
+                    @extend %font-lato;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 167%;
+                }
+                &__second{
+                    color: $colorText;
+                    @extend %font-lato;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 167%;
+                }
+            }
+            &__rectangle{
+                padding-top: 32px;
+                display: flex;
+                &__left{
+                    display: flex;
+                    position: relative;
+                    flex-direction: row;
+                    align-items: center;
+                    &__text_mail{
+                        position: absolute;
+                        color: $colorText;
+                        @extend %font-lato;
+                        font-size: 14px;
+                        font-weight: 400;
+                        opacity: 0.671;
+                        margin-left: 22px;
+                    }
+                }
+                &__right{
+                    display: flex;
+                    position: relative;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    &__subscribe_text{
+                        color: #FFF;
+                        text-align: center;
+                        @extend %font-lato;
+                        font-size: 14px;
+                        font-weight: 400;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    display: flex;
+    background-color: #222;
+    justify-content: space-between;
+    align-items: center;
+    @include center_570();
+    &__copyright{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: #FBFBFB;
+        @extend %font-lato;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__social{
+        display: flex;
+        gap: 7px;
+        &__container{
+            @include center_position();
+            width: 32px;
+            height: 32px;
+            background-color: #ffffff;
+        }
+        &__container:hover{
+            background-color: $colorBrand;
+            &__img{
+                fill: #ffffff;
+            }
         }
     }
 }

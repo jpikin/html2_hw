@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.about__about_us__text__second, .about__about_us__text__first, .features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text {
+.footer__copyright, .subscribe__intersect_container__subscribe_form__rectangle__right__subscribe_text, .subscribe__intersect_container__subscribe_form__rectangle__left__text_mail, .subscribe__intersect_container__subscribe_form__text__second, .subscribe__intersect_container__subscribe_form__text__first, .subscribe__intersect_container__subscribe_form__second, .subscribe__intersect_container__subscribe_form__first, .subscribe__intersect_container__intersect__intersect_text_curve, .subscribe__intersect_container__intersect__text, .about__about_us__text__second, .about__about_us__text__first, .features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text {
   font-family: Lato;
   font-style: normal;
   line-height: normal;
@@ -285,4 +285,123 @@
   gap: 30px;
   padding-left: 0px;
   padding-top: 97px;
+}
+.subscribe__intersect_container__intersect__text {
+  width: 360px;
+  height: 99px;
+  color: #222;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 126px;
+}
+.subscribe__intersect_container__intersect__intersect_text_curve {
+  color: #222;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+}
+.subscribe__intersect_container__subscribe_form {
+  display: flex;
+  padding-top: 150px;
+  padding-right: 0px;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe__intersect_container__subscribe_form__first {
+  color: #222;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 167%;
+}
+.subscribe__intersect_container__subscribe_form__second {
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 167%;
+}
+.subscribe__intersect_container__subscribe_form__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe__intersect_container__subscribe_form__text__first {
+  color: #222;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 167%;
+}
+.subscribe__intersect_container__subscribe_form__text__second {
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 167%;
+}
+.subscribe__intersect_container__subscribe_form__rectangle {
+  padding-top: 32px;
+  display: flex;
+}
+.subscribe__intersect_container__subscribe_form__rectangle__left {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+}
+.subscribe__intersect_container__subscribe_form__rectangle__left__text_mail {
+  position: absolute;
+  color: #222;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.671;
+  margin-left: 22px;
+}
+.subscribe__intersect_container__subscribe_form__rectangle__right {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe__intersect_container__subscribe_form__rectangle__right__subscribe_text {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+}
+
+.footer {
+  display: flex;
+  background-color: #222;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+.footer__copyright {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #FBFBFB;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer__social {
+  display: flex;
+  gap: 7px;
+}
+.footer__social__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+}
+.footer__social__container:hover {
+  background-color: #F16D7F;
+}
+.footer__social__container:hover__img {
+  fill: #ffffff;
 }/*# sourceMappingURL=style.css.map */
