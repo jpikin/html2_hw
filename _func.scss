@@ -1,0 +1,18 @@
+@mixin center_main(){
+    padding-left:calc(50% - 570px);
+    padding-right:calc(50% - 570px);
+}
+@mixin center_second(){
+    padding-left:calc(50% - 800px);
+    padding-right:calc(50% - 800px);
+}   
+@mixin center_position(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+%font-lato{
+    font-family: Lato;
+    font-style: normal;
+    line-height: normal;
+}
