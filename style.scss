@@ -5,11 +5,11 @@
     padding: 0;
 }
 
-@mixin center_570(){
+@mixin center_main(){
     padding-left:calc(50% - 570px);
     padding-right:calc(50% - 570px);
 }
-@mixin center_800(){
+@mixin center_second(){
     padding-left:calc(50% - 800px);
     padding-right:calc(50% - 800px);
 }   
@@ -25,7 +25,7 @@
 }
 
 .header{
-    @include center_570();
+    @include center_main();
     display: flex;
     justify-content: space-between;
     background-color: #222;
@@ -59,7 +59,7 @@
     display: flex;
     align-items: center;
     gap: 63px;
-    @include center_800();
+    @include center_second();
     background: #F1E4E6;
     &__img {
     height: 764px;
@@ -96,7 +96,7 @@
     grid-column-end: 4;
 }
 .offer{
-    @include center_570();
+    @include center_main();
     margin-top: 65px;
     margin-bottom: 96px;
     display: grid;
@@ -126,7 +126,7 @@
     }
 }
 .features_text{
-    @include center_570();
+    @include center_main();
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +146,7 @@
     }
 }
 .features{
-    @include center_570();
+    @include center_main();
     display: grid;
     grid-template-columns: 360px 360px 360px;
     gap: $gapItems;;
@@ -212,7 +212,7 @@
     }
 }
 .features_button{
-    @include center_570();
+    @include center_main();
     display: flex;
     justify-content: center;
     margin-top: 48px;
@@ -231,7 +231,7 @@
     }
 }
 .about{
-    @include center_570();
+    @include center_main();
     @include center_position();
     gap: $gapItems;
     background-color: #222;
@@ -281,7 +281,7 @@
         display: flex;
         width: 100%;
         justify-content: space-around;
-        @include center_570();
+        @include center_main();
         &__intersect{
             display: flex;
             flex-direction: column;
@@ -390,7 +390,7 @@
     background-color: #222;
     justify-content: space-between;
     align-items: center;
-    @include center_570();
+    @include center_main();
     &__copyright{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -413,6 +413,160 @@
             &__img{
                 fill: #ffffff;
             }
+        }
+    }
+}
+@media (width<1025px){
+    @mixin center_main(){
+        padding-left:calc(50% - 360px);
+        padding-right:calc(50% - 360px);
+    }
+    @mixin center_second(){
+        padding-left:calc(50% - 383px);
+        padding-right:calc(50% - 383px);
+    }
+    .header{
+        &__left_container{padding-left: 16px;}
+        &__right_container{padding-right: 16px;}
+    } 
+    .top{
+        &__img{
+            width: 386px;
+            height: 100%;
+        }
+        &__text_group{
+            &__brand_text{font-size: 44px;}
+            &__lux_text{font-size: 24px;}
+            &__fashion_text{font-size: 24px;}
+        }
+    }
+    .offer {
+        padding-left:calc(50% - 360px);
+        padding-right:calc(50% - 360px);
+        display: grid;
+        padding-top: 65px;
+        grid-template-columns: repeat(3, 232px);
+        grid-template-rows: 168px 116px;
+        gap: 20px;
+        &__card{
+            &__img{width: 232px;}
+            &__big_img{width: 735px;}
+        }
+    }
+    .features_text{
+        margin-top: 109px;
+        gap: 6px;
+    }
+    .features{
+        padding-left:calc(50% - 368px);
+        padding-right:calc(50% - 368px);
+        grid-template-columns: 360px 360px;
+        gap: 16px;
+        justify-content: center;
+        padding-bottom: 32px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 64px;
+        &__about_us{
+            margin-top: 48px;
+            margin-bottom: 0px;
+            &__text{
+                &__second{margin-bottom: 0px;}
+            }
+        }
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__background{
+            content: url(./img/Layer\ 41_tablet.png);
+        }
+        &__intersect_container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &__intersect{
+                padding-left: 0px;
+                padding-top: 64px;
+                &__text{padding-bottom: 48px;}
+            }
+            &__subscribe_form{
+                padding-left: 0px;
+                padding-top: 0px;
+                padding-bottom: 140px;
+            }
+        }
+    }
+    .footer{
+        &__social{padding-right: 24px;}
+        &__copyright{padding-left: 32px;}
+    }
+}
+@media (width<768px){
+    @mixin center_main(){
+        padding-left:calc(50% - 172px);
+        padding-right:calc(50% - 172px);
+    }
+    .hidden {display: none;}
+    .top{
+        justify-content: center;
+        &__text_group{
+            padding-top: 74px;
+            padding-bottom: 74px;
+            gap: 15px;
+            &__brand_text{font-size: 38px;}
+            &__lux_text{font-size: 20px;}
+            &__fashion_text{font-size: 20px;}
+        }
+    }
+    .offer{
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        padding-top: 10px;
+        margin-bottom: 0;
+        &__card{
+            &__img{width: 343px;}
+            &__big_img{
+                width: 343px;
+                height: 111px;
+            }
+        }
+    }
+    .features_text{
+        margin-top: 38px;
+        gap: 3px;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        padding-left:calc(50% - 180px);
+        padding-right:calc(50% - 180px);
+    }
+    .features_button{padding-bottom: 0px;}
+    .about {gap: 0px;}
+    .subscribe{
+        &__background{
+            content: url(./img/Layer\ 41_fone.png);
+            &__subscribe_form{
+                padding-bottom: 60px;
+            }
+        }
+    }
+    .footer {
+        flex-direction: column;
+        &__copyright{
+            order: 2;
+            padding-left: 0px;
+            padding-bottom: 9px;
+        }
+        &__social{
+            padding-right: 0px;
+            padding-top: 43px;
         }
     }
 }

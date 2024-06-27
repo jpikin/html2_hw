@@ -404,4 +404,167 @@
 }
 .footer__social__container:hover__img {
   fill: #ffffff;
+}
+
+@media (width < 1025px) {
+  .header__left_container {
+    padding-left: 16px;
+  }
+  .header__right_container {
+    padding-right: 16px;
+  }
+  .top__img {
+    width: 386px;
+    height: 100%;
+  }
+  .top__text_group__brand_text {
+    font-size: 44px;
+  }
+  .top__text_group__lux_text {
+    font-size: 24px;
+  }
+  .top__text_group__fashion_text {
+    font-size: 24px;
+  }
+  .offer {
+    padding-left: calc(50% - 360px);
+    padding-right: calc(50% - 360px);
+    display: grid;
+    padding-top: 65px;
+    grid-template-columns: repeat(3, 232px);
+    grid-template-rows: 168px 116px;
+    gap: 20px;
+  }
+  .offer__card__img {
+    width: 232px;
+  }
+  .offer__card__big_img {
+    width: 735px;
+  }
+  .features_text {
+    margin-top: 109px;
+    gap: 6px;
+  }
+  .features {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+    grid-template-columns: 360px 360px;
+    gap: 16px;
+    justify-content: center;
+    padding-bottom: 32px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 64px;
+  }
+  .about__about_us {
+    margin-top: 48px;
+    margin-bottom: 0px;
+  }
+  .about__about_us__text__second {
+    margin-bottom: 0px;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe__background {
+    content: url(./img/Layer\ 41_tablet.png);
+  }
+  .subscribe__intersect_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .subscribe__intersect_container__intersect {
+    padding-left: 0px;
+    padding-top: 64px;
+  }
+  .subscribe__intersect_container__intersect__text {
+    padding-bottom: 48px;
+  }
+  .subscribe__intersect_container__subscribe_form {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 140px;
+  }
+  .footer__social {
+    padding-right: 24px;
+  }
+  .footer__copyright {
+    padding-left: 32px;
+  }
+}
+@media (width < 768px) {
+  .hidden {
+    display: none;
+  }
+  .top {
+    justify-content: center;
+  }
+  .top__text_group {
+    padding-top: 74px;
+    padding-bottom: 74px;
+    gap: 15px;
+  }
+  .top__text_group__brand_text {
+    font-size: 38px;
+  }
+  .top__text_group__lux_text {
+    font-size: 20px;
+  }
+  .top__text_group__fashion_text {
+    font-size: 20px;
+  }
+  .offer {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+  .offer__card__img {
+    width: 343px;
+  }
+  .offer__card__big_img {
+    width: 343px;
+    height: 111px;
+  }
+  .features_text {
+    margin-top: 38px;
+    gap: 3px;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+  }
+  .features_button {
+    padding-bottom: 0px;
+  }
+  .about {
+    gap: 0px;
+  }
+  .subscribe__background {
+    content: url(./img/Layer\ 41_fone.png);
+  }
+  .subscribe__background__subscribe_form {
+    padding-bottom: 60px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__copyright {
+    order: 2;
+    padding-left: 0px;
+    padding-bottom: 9px;
+  }
+  .footer__social {
+    padding-right: 0px;
+    padding-top: 43px;
+  }
 }/*# sourceMappingURL=style.css.map */
