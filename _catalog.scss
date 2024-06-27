@@ -27,7 +27,6 @@
 .top_photo{
     position: relative;
     display: flex;
-    @include center_main();
     justify-content: center;
     background-color: #F7F7F7;
     &__arrows{
@@ -44,5 +43,69 @@
         &__left_arrow:hover{
             .left_arrow{fill: $colorBrand;}
         }
+    }
+}
+.goods_info{
+    @include center_main();
+    width: 1140px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #FFFFFF;
+    &__collection{
+        @extend %font-lato;
+        color: $colorBrand;
+        font-size: 14px;
+        padding-top: 65px;
+    }
+    &__name{
+        @extend %font-lato;
+        color: #4D4D4D;
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    &__line{margin-top: 12px;}
+    &__description{
+        @extend %font-lato;
+        color: #5E5E5E;
+        font-size: 14px;
+        width: 555px;
+        text-align: center;
+        margin-top: 48px;
+    }
+    &__price{
+        @extend %font-lato;
+        color: $colorBrand;
+        font-size: 24px;
+        margin-top: 32px;
+    }
+    &__second_line{
+        margin-top: 65px;
+    }
+    &__filters{
+        padding-top: 65px;
+        display: flex;
+        gap: 23px;
+        &__filter{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &__text{
+                @extend %font-lato;
+                color: #6F6E6E;
+                font-size: 14px;
+            }
+        }
+    }
+    &__button{
+        margin-top: 48px;
+        width: 212px;
+        height: 48px;
+        gap: 23px;
+        @include center_position();
+        &__text{color: $colorBrand;}
+        &__basket{color: $colorBrand;}
+
     }
 }
