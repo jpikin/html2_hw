@@ -24,3 +24,25 @@
         }
     }
 }
+.top_photo{
+    position: relative;
+    display: flex;
+    @include center_main();
+    justify-content: center;
+    background-color: #F7F7F7;
+    &__arrows{
+        @include center_main();
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        display: flex;
+        &__right_arrow:hover{
+            .right_arrow{fill: $colorBrand;}
+        }
+        &__left_arrow:hover{
+            .left_arrow{fill: $colorBrand;}
+        }
+    }
+}

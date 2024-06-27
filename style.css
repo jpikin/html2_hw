@@ -29,6 +29,31 @@
   color: #F16D7F;
 }
 
+.top_photo {
+  position: relative;
+  display: flex;
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+  justify-content: center;
+  background-color: #F7F7F7;
+}
+.top_photo__arrows {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  display: flex;
+}
+.top_photo__arrows__right_arrow:hover .right_arrow {
+  fill: #F16D7F;
+}
+.top_photo__arrows__left_arrow:hover .left_arrow {
+  fill: #F16D7F;
+}
+
 .footer__copyright, .subscribe__intersect_container__subscribe_form__rectangle__right__subscribe_text, .subscribe__intersect_container__subscribe_form__rectangle__left__text_mail, .subscribe__intersect_container__subscribe_form__text__second, .subscribe__intersect_container__subscribe_form__text__first, .subscribe__intersect_container__subscribe_form__second, .subscribe__intersect_container__subscribe_form__first, .subscribe__intersect_container__intersect__intersect_text_curve, .subscribe__intersect_container__intersect__text, .about__about_us__text__second, .about__about_us__text__first, .features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text, .catalog_top__new_arrivals, .catalog_top__bread_crumbs {
   font-family: Lato;
   font-style: normal;
