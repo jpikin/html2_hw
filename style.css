@@ -1,4 +1,86 @@
-.footer__copyright, .subscribe__intersect_container__subscribe_form__rectangle__right__subscribe_text, .subscribe__intersect_container__subscribe_form__rectangle__left__text_mail, .subscribe__intersect_container__subscribe_form__text__second, .subscribe__intersect_container__subscribe_form__text__first, .subscribe__intersect_container__subscribe_form__second, .subscribe__intersect_container__subscribe_form__first, .subscribe__intersect_container__intersect__intersect_text_curve, .subscribe__intersect_container__intersect__text, .about__about_us__text__second, .about__about_us__text__first, .features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text, .goods_info__filters__filter__text, .goods_info__price, .goods_info__description, .goods_info__name, .goods_info__collection, .catalog_top__bread_crumbs, .catalog_top__new_arrivals {
+.footer__copyright, .subscribe__intersect_container__subscribe_form__rectangle__right__subscribe_text, .subscribe__intersect_container__subscribe_form__rectangle__left__text_mail, .subscribe__intersect_container__subscribe_form__text__second, .subscribe__intersect_container__subscribe_form__text__first, .subscribe__intersect_container__subscribe_form__second, .subscribe__intersect_container__subscribe_form__first, .subscribe__intersect_container__intersect__intersect_text_curve, .subscribe__intersect_container__intersect__text, .about__about_us__text__second, .about__about_us__text__first, .features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text, .goods_info__filters__filter__text, .goods_info__price, .goods_info__description, .goods_info__name, .goods_info__collection, .catalog_top__bread_crumbs, .catalog_top__new_arrivals, .menu__text, .filters__filter__summary__text {
+  font-family: Lato;
+  font-style: normal;
+  line-height: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 28px;
+}
+.filters__filter {
+  position: relative;
+}
+.filters__filter__summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filters__filter__summary__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.filters__filter_size {
+  position: absolute;
+  left: -9px;
+  width: 58px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+}
+.filters__filter_size__label {
+  margin-left: 6px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.menu {
+  background-color: aliceblue;
+  width: 232px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.menu__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.menu__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}
+.menu__label {
+  color: #F16D7F;
+}
+.menu__main_text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  text-align: left;
+}
+.menu__category {
+  padding-left: 21px;
+}
+
+.footer__copyright, .subscribe__intersect_container__subscribe_form__rectangle__right__subscribe_text, .subscribe__intersect_container__subscribe_form__rectangle__left__text_mail, .subscribe__intersect_container__subscribe_form__text__second, .subscribe__intersect_container__subscribe_form__text__first, .subscribe__intersect_container__subscribe_form__second, .subscribe__intersect_container__subscribe_form__first, .subscribe__intersect_container__intersect__intersect_text_curve, .subscribe__intersect_container__intersect__text, .about__about_us__text__second, .about__about_us__text__first, .features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text, .goods_info__filters__filter__text, .goods_info__price, .goods_info__description, .goods_info__name, .goods_info__collection, .catalog_top__bread_crumbs, .catalog_top__new_arrivals, .filters__filter__summary__text, .menu__text {
   font-family: Lato;
   font-style: normal;
   line-height: normal;
@@ -132,7 +214,7 @@
   margin-top: 128px;
 }
 
-.footer__copyright, .subscribe__intersect_container__subscribe_form__rectangle__right__subscribe_text, .subscribe__intersect_container__subscribe_form__rectangle__left__text_mail, .subscribe__intersect_container__subscribe_form__text__second, .subscribe__intersect_container__subscribe_form__text__first, .subscribe__intersect_container__subscribe_form__second, .subscribe__intersect_container__subscribe_form__first, .subscribe__intersect_container__intersect__intersect_text_curve, .subscribe__intersect_container__intersect__text, .about__about_us__text__second, .about__about_us__text__first, .features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text, .catalog_top__new_arrivals, .catalog_top__bread_crumbs, .goods_info__collection, .goods_info__name, .goods_info__description, .goods_info__price, .goods_info__filters__filter__text {
+.footer__copyright, .subscribe__intersect_container__subscribe_form__rectangle__right__subscribe_text, .subscribe__intersect_container__subscribe_form__rectangle__left__text_mail, .subscribe__intersect_container__subscribe_form__text__second, .subscribe__intersect_container__subscribe_form__text__first, .subscribe__intersect_container__subscribe_form__second, .subscribe__intersect_container__subscribe_form__first, .subscribe__intersect_container__intersect__intersect_text_curve, .subscribe__intersect_container__intersect__text, .about__about_us__text__second, .about__about_us__text__first, .features__card__description, .features__card__price, .features__card__name, .features__card__add_to_cart, .features_text__featured_text, .features_text__items, .offer__card__text, .top__text_group__fashion_text, .top__text_group__lux_text, .top__text_group__brand_text, .filters__filter__summary__text, .menu__text, .catalog_top__new_arrivals, .catalog_top__bread_crumbs, .goods_info__collection, .goods_info__name, .goods_info__description, .goods_info__price, .goods_info__filters__filter__text {
   font-family: Lato;
   font-style: normal;
   line-height: normal;

@@ -1,119 +1,79 @@
 @import 'func';
-.catalog_top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #F8F3F4;
-    @include center_main();
-    &__new_arrivals{
-        color: $colorBrand;
-        @extend %font-lato;
-        font-weight: 400px;
-        font-size: 24px;
-        line-height: 28.8px;
-    }
-    &__bread_crumbs{
-        @extend %font-lato;
-        font-weight: 300px;
-        font-size: 14px;
-        line-height: 16.8px;
-        &__arrivals{
-            color: $colorBrand;
-        }
-    }
+@import 'vars';
+
+* {
+    padding: 0;
+    margin: 0;
 }
-.top_photo{
-    z-index: -1;
-    position: relative;
+.filters{
+    
     display: flex;
-    justify-content: center;
-    background-color: #F7F7F7;
-    &__arrows{
-        height: 100%;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        display: flex;
-        &__right_arrow:hover{
-            .right_arrow{fill: $colorBrand;}
-        }
-        &__left_arrow:hover{
-            .left_arrow{fill: $colorBrand;}
-        }
-    }
-}
-.goods_info{
-    margin-left:calc(50% - 570px);
-    margin-right:calc(50% - 570px);
-    border: 0.5px solid #EAEAEA;
-    margin-top: -35px; 
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    background-color: #FFFFFF;
-    &__collection{
-        @extend %font-lato;
-        color: $colorBrand;
-        font-size: 14px;
-        padding-top: 65px;
-    }
-    &__name{
-        @extend %font-lato;
-        color: #4D4D4D;
-        font-size: 18px;
-        margin-top: 12px;
-    }
-    &__line{margin-top: 12px;}
-    &__description{
-        @extend %font-lato;
-        color: #5E5E5E;
-        font-size: 14px;
-        width: 555px;
-        text-align: center;
-        margin-top: 48px;
-    }
-    &__price{
-        @extend %font-lato;
-        color: $colorBrand;
-        font-size: 24px;
-        margin-top: 32px;
-    }
-    &__second_line{
-        margin-top: 65px;
-    }
-    &__filters{
-        padding-top: 65px;
-        display: flex;
-        gap: 23px;
-        &__filter{
+    gap: 28px;
+    &__filter{
+        position: relative;
+        &__summary{
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 10px;
             &__text{
                 @extend %font-lato;
-                color: #6F6E6E;
+                font-weight: 400;
                 font-size: 14px;
+                line-height: 16.8px;
             }
         }
     }
-    &__button{
-        background-color: transparent;
-        border: 0.5px solid $colorBrand;
-        margin-top: 48px;
-        margin-bottom: 45px;
-        width: 212px;
-        height: 48px;
-        gap: 23px;
-        @include center_position();
-        &__text{color: $colorBrand;}
-        &__basket{
-            width: 26px;
-            height: 24px;
-            color: $colorBrand;}
+    &__filter_size{
+        position: absolute;
+        left: -9px;
+        width: 58px;
+        background-color:antiquewhite;//#FFFFFF;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 6px;
+        &__label{
+            margin-left: 6px;
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16.41px;
+        }
     }
 }
-.features_catalog{margin-top: 128px;}
-.subscribe_catalog{margin-top: 128px;}
+.menu {
+    background-color: aliceblue;
+    width: 232px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    &__categories{
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+    &__text{
+        @extend %font-lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+    }
+    &__label{
+        color: $colorBrand;
+    }
+    &__main_text{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.8px;
+        text-align: left;
+    }
+    &__category{
+        padding-left: 21px;
+    }
+}
