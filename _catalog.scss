@@ -1,10 +1,5 @@
 @import 'func';
 @import 'vars';
-
-* {
-    padding: 0;
-    margin: 0;
-}
 .filters{
     
     display: flex;
@@ -27,7 +22,7 @@
         position: absolute;
         left: -9px;
         width: 58px;
-        background-color:antiquewhite;//#FFFFFF;
+        background-color:#FFFFFF;
         display: flex;
         flex-direction: column;
         gap: 6px;
@@ -44,14 +39,16 @@
     }
 }
 .menu {
-    background-color: aliceblue;
+    position: absolute;
+    top: 78px;
+    right: 0;
+    background-color: #FFFFFF;
     width: 232px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-bottom: 32px;
+    box-sizing: border-box;
+    padding: 32px;
     &__categories{
         display: flex;
         flex-direction: column;
@@ -75,5 +72,12 @@
     }
     &__category{
         padding-left: 21px;
+        list-style-type: none;
+        
+    }
+    &__link{
+        text-decoration: none;
+        color: $colorText;
+        &:hover{color: $colorBrand;}
     }
 }
